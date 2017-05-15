@@ -1,0 +1,23 @@
+{
+  "name": "bookapi",
+  "version": "1.0.0",
+  "description": "A Book API",
+  "main": "api/index.js",
+  "scripts": {
+    "test": "echo \"Testing is for cowards\" && exit 1",
+    "knex": "knex"
+  },
+  "keywords": [
+    "book",
+    "api"
+  ],
+  "author": "Fabián Ezequiel Gallina",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "knex": "^0.13.0",
+    "pg": "^6.1.5",
+    "slug": "^0.9.1"
+  }
+}
