@@ -1,0 +1,8 @@
+.git
+Dockerfile.app
+Dockerfile.dependencies
+Makefile
+docker-compose.yaml
+node_modules
+npm-debug.log
+pgdata
