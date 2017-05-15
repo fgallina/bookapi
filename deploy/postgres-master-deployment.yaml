@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: postgres-master
+spec:
+  template:
+    metadata:
+      labels:
+        app: postgres-master
+        tier: backend
+    spec:
+      containers:
+        - name: postgres-master
+          image: postgres:9.6.2
+          ports:
+            - containerPort: 5432
+          env:  # TODO: Use configmap/secrets
+            - name: POSTGRES_PASSWORD
+              value: "password"
+            - name: POSTGRES_DB
+              value: "bookapi"
